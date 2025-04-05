@@ -1,5 +1,7 @@
 # 🏥 Hospital Management System
 
+I am still working on the project with only some function working.
+
 A full-stack Hospital Management System built with **ReactJS** and **Flask**. This application enables efficient management of appointments, patient records, doctors, billing, reports, and authentication, all through a modern web interface.
 
 ---
