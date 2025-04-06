@@ -7,7 +7,7 @@ import Dashboard from './components/Dashboard';
 import Appointments from './components/Appointment';
 import Doctors from './components/Doctors';
 import Billing from './components/Billing';
-import Reports from './components/Reports';
+import Patients from './components/Patients';
 import About from './components/About';
 import Contact from './components/Contact';
 
@@ -18,11 +18,11 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/home" element={<Home />}>
-          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="" element={<Dashboard />} />
           <Route path="appointments" element={<Appointments />} />
           <Route path="doctors" element={<Doctors />} />
           <Route path="billing" element={<Billing />} />
-          <Route path="reports" element={<Reports />} />
+          <Route path="patients" element={<Patients />} />
         </Route>
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />

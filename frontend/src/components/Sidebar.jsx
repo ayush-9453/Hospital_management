@@ -18,7 +18,7 @@ function Sidebar() {
 
       <ul className="space-y-6">
         <li>
-          <Link to="/home/dashboard" className="flex items-center space-x-2 hover:text-blue-600">
+          <Link to="/home" className="flex items-center space-x-2 hover:text-blue-600">
             <FaHome />
             {!collapsed && <span>Dashboard</span>}
           </Link>
@@ -36,17 +36,18 @@ function Sidebar() {
           </Link>
         </li>
         <li>
+          <Link to="/home/patients" className="flex items-center space-x-2 hover:text-blue-600">
+            <TbReportSearch />
+            {!collapsed && <span>Patients</span>}
+          </Link>
+        </li>
+        <li>
           <Link to="/home/billing" className="flex items-center space-x-2 hover:text-blue-600">
             <FaFileInvoiceDollar />
             {!collapsed && <span>Billing</span>}
           </Link>
         </li>
-        <li>
-          <Link to="/home/reports" className="flex items-center space-x-2 hover:text-blue-600">
-            <TbReportSearch />
-            {!collapsed && <span>Reports</span>}
-          </Link>
-        </li>
+       
       </ul>
     </div>
   );

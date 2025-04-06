@@ -2,6 +2,9 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from models import db, User
 from routes.appointment_routes import appointment_bp  # Import the blueprint
+from routes.patient_routes import patient_bp
+from routes.billing_routes import billing_bp
+from routes.doctor_routes import doctor_bp
 
 app = Flask(__name__)
 CORS(app)
@@ -14,6 +17,9 @@ db.init_app(app)
 
 # Register Blueprints
 app.register_blueprint(appointment_bp)
+app.register_blueprint(patient_bp)
+app.register_blueprint(billing_bp)
+app.register_blueprint(doctor_bp)
 
 # Create DB tables
 with app.app_context():
